@@ -1,0 +1,168 @@
+* {
+}
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: poppins, sans-serif;
+}
+.heading {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  color: rgb(72, 52, 26);
+  font-size: 1.8rem;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  z-index: -1;
+}
+
+.mountains {
+  position: absolute;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.mountain-lrg {
+  border-top: 0;
+  border-left: 20vw solid transparent;
+  border-right: 20vw solid transparent;
+  border-bottom: 38vh solid #5aaab5;
+}
+.mountain-sm {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  border-top: 0;
+  border-left: 18vw solid transparent;
+  border-right: 15vw solid transparent;
+  border-bottom: 25vh solid #5aaab5;
+}
+
+.sun {
+  position: absolute;
+  width: 8vw;
+  min-width: 60px;
+  min-height: 60px;
+  height: 8vw;
+  background-color: #f5c900;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  top: 65%;
+  animation-name: sun;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.clouds {
+  width: 100%;
+  height: 55%;
+  position: absolute;
+}
+.cloud {
+  width: 15vw;
+  height: 10vw;
+  position: absolute;
+  bottom: 10%;
+  animation-name: cloud;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cloud-part1 {
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #e3e3e3;
+  left: 18%;
+  top: 14%;
+}
+.cloud-part2 {
+  width: 70%;
+  height: 30%;
+  border-radius: 999px;
+  position: absolute;
+  bottom: 28%;
+  left: 10%;
+  background-color: #e3e3e3;
+}
+.cloud-part3 {
+  width: 100%;
+  height: 40%;
+  border-radius: 999px;
+  position: absolute;
+  bottom: 0;
+  background-color: #e3e3e3;
+}
+
+.cloud:nth-of-type(2) {
+  left: 30%;
+  top: 30%;
+}
+.cloud:nth-of-type(3) {
+  left: 60%;
+  top: 70%;
+}
+.cloud:nth-of-type(4) {
+  left: 80%;
+  top: 40%;
+}
+
+.cld1 {
+  animation-duration: 10s;
+}
+.cld2 {
+  animation-duration: 20s;
+}
+.cld3 {
+  animation-duration: 40s;
+}
+.cld4 {
+  animation-duration: 27s;
+}
+
+/* ======================= ANIMATION ======================= */
+
+@keyframes sun {
+  0% {
+    top: 75%;
+    background-color: red;
+  }
+  10% {
+    background-color: orangered;
+  }
+  20% {
+    background-color: orange;
+  }
+  100% {
+    top: -40%;
+    background-color: #f5c900;
+  }
+}
+
+@keyframes cloud {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 110%;
+  }
+}
