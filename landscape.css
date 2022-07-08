@@ -166,3 +166,22 @@ h1 {
     left: 110%;
   }
 }
+
+@media (max-width: 500px) {
+  @keyframes sun {
+    0% {
+      top: 90%;
+      background-color: red;
+    }
+    10% {
+      background-color: orangered;
+    }
+    20% {
+      background-color: orange;
+    }
+    100% {
+      top: -40%;
+      background-color: #f5c900;
+    }
+  }
+}
